@@ -1,14 +1,13 @@
 #Diccionarios
 
-from time import process_time_ns
-
-
 colores={"azul":"blue",
          "rojo":"red",
          "verde":"green",
          "amarillo":"yellow",
-         }
-contactos={"Santiago":{"edad":20,"estatura":1.74},"Mariana":[19,1.57]}
+}
+contactos={"Santiago":
+           {"edad":22,"estatura":1.74},
+           "Gaby":[18,1.65]}
 
 print(contactos["Santiago"])
 print(contactos.keys())
@@ -18,7 +17,12 @@ colores ["azul"]="blau"
 print(colores)
 print(colores.keys())
 
-equipo={30:"Messi", 11:"Neymar", 9:"Mbappe"}
+equipo={
+        30:"Messi", 
+        11:"Neymar", 
+        9:"Mbappe"
+}
+
 print(equipo[30])
 print(equipo.get(12,"No existe un jugador con ese número")) #Primer parámetro: Clave. Segundo parámetro: Si no existe esa clave, agregar una excepción
 print(equipo.values())
