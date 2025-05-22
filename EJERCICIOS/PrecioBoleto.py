@@ -11,7 +11,9 @@ precioBase=10
 
 km=float(input("Duración del viaje en kilómetros (km)-->"))
 
+# Calculating the price of the trip.
 precioRecorrido=km*0.30
 precioFinal=precioBase+precioRecorrido
 
+# Printing the final price of the trip.
 print("El precio total a pagar es: ${:.2f}".format(precioFinal))
