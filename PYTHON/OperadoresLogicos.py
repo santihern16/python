@@ -26,3 +26,6 @@ d=10
 
 resultado=((a>b)or(a<c))and((a==c)or(a>=b))
 print(resultado)
+
+if a >= 10:
+    print("hola")

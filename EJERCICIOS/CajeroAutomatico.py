@@ -7,8 +7,9 @@ y que contenga el siguiente menú de opciones:
 3. Mostrar dinero disponible
 4. Salir
 '''
-from profile import Profile
+import os
 
+os.system("cls")
 
 saldo=1000
 print("BIENVENIDO AL CAJERO AUTOMÁTICO")
@@ -20,9 +21,9 @@ opcion=int(input("Ingrese la opcion que desea realizar: "))
 if opcion==1:
     print("SALDO ACTUAL: ${}".format(saldo))
     ingresar=float(input("Cuanto desea ingresar a su cuenta?: $"))
-    nuevo_saldo=saldo+ingresar
+    saldo += ingresar
     print("Usted ha ingresado: ${:.2f}".format(ingresar))
-    print("Su nuevo saldo es de: ${:.2f}".format(nuevo_saldo))
+    print("Su nuevo saldo es de: ${:.2f}".format(saldo))
 
 elif opcion==2:
     print("SALDO DISPONIBLE: ${}".format(saldo))
@@ -30,9 +31,9 @@ elif opcion==2:
     if (retirar>saldo):
         print("Fondos insuficientes para retirar...")
     else:
-        nuevo_saldo=saldo-retirar    
+        saldo -= retirar    
         print("Usted ha retirado: ${:.2f}".format(retirar))
-        print("Su nuevo saldo es de: ${:.2f}".format(nuevo_saldo))
+        print("Su nuevo saldo es de: ${:.2f}".format(saldo))
 
 elif opcion==3:
     print("SU SALDO ACTUAL ES DE: ${}".format(saldo))

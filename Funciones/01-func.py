@@ -1,4 +1,6 @@
 MI_CONSTANTE = 2
+is_user_logged = True
+is_user_logged = 42
 
 def suma(a, b):
     return a + b
