@@ -1,8 +1,6 @@
 #Conjuntos: grupos de elementos desordenados en los que no puede haber elmentos duplicados
 
 #si no se agrega el set se entiende como un diccionario
-from telnetlib import PRAGMA_HEARTBEAT
-
 
 conjunto=set()
 conjunto={1,2,3,"hola",4.56}
