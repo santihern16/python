@@ -40,3 +40,9 @@ print("\ncontinue")
 for index, animal in enumerate(animales):
     if animal == 'jirafa': continue
     print(animal)
+
+
+#Comprension de listas (list comprehension)
+animales = ["perro", "gato", "elefante", "jirafa", "león"]
+animales_mays = [animal.upper() for animal in animales]
+print(animales_mays)
