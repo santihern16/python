@@ -1,7 +1,13 @@
+import math
+
 def is_prime(n):
     if n <= 1:
         return False
-    for i in range(2, n):
+    if n == 2:
+        return True
+    if n % 2 == 0: #comprueba si el numero es par, por lo tanto no es primo
+        return False
+    for i in range(3, int(math.sqrt(n))+1, 2): #solo numeros impares
         if n % i == 0:
             return False
     return True
