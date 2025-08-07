@@ -14,4 +14,3 @@ if amenaza_actual in niveles_amenaza:
         print("Actividad recomendada: Activar el protocolo de respuesta a incidentes.")
 else:
     print("Selecciona un nivel de amenaza adecuado (bajo, moderado, alto, crítico)")
-veles_amenaza = ("bajo", "moderado", "alto", "crítico")
