@@ -5,9 +5,11 @@ colores={"azul":"blue",
          "verde":"green",
          "amarillo":"yellow",
 }
-contactos={"Santiago":
-           {"edad":22,"estatura":1.74},
-           "Gaby":[18,1.65]}
+contactos={
+        "Santiago":
+        {"edad":22,"estatura":1.74},
+        "Gaby":[18,1.65]
+        }
 
 print(contactos["Santiago"])
 print(contactos.keys())
